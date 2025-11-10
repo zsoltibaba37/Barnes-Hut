@@ -202,6 +202,7 @@ push_galaxy (std::vector<bh::point_t> &points, int n, float inital_radius,
 int
 main ()
 {
+  srand(time(nullptr));
   sf::RenderWindow window{ sf::VideoMode{ 800, 800 }, "Barnes-Hut Simulation",
                            sf::Style::Titlebar,
                            sf::ContextSettings{ 24, 8, 8 } };
